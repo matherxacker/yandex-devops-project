@@ -1,0 +1,32 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.tfstate.lock.info
+terraform.tfvars
+*.tfvars
+
+# Ansible
+inventory.ini
+*.retry
+__pycache__/
+
+# SSH keys
+*.pem
+*.ppk
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+github_key
+
+# System files
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Environment files
+.env
+secrets.ini
