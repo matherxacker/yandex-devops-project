@@ -30,3 +30,10 @@ github_key
 # Environment files
 .env
 secrets.ini
+\n# Terraform cache and secrets
+terraform/.terraform/*
+terraform/*.tfstate*
+terraform/.terraform.lock.hcl
+terraform/terraform.tfvars
+terraform/*.tfvars
+ansible/inventory.ini
