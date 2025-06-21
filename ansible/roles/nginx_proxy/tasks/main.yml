@@ -1,0 +1,11 @@
+- name: Configure proxy
+  template:
+    src: nginx_proxy.conf.j2
+    dest: /etc/nginx/conf.d/proxy.conf
+  notify: restart nginx
+  register: nginx_conf
+
+- name: Check nginx configuration
+  command: nginx -t
+  when: nginx_conf.changed
+  changed_when: false
